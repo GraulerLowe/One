@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regalo Alienígena</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <font color="#FFFFFF"><h1>Un Regalo Alienígena</h1></font>
+  <!-- Paso 1: Carta/Caja -->
+  <div id="step-1" class="step">
+    <p>Estabas tranquila en tu habitacion viendo reels pero
+      notas algo... ¿Es eso es una caja?</p>
+    <div class="caja"></div>
+    <img src="assets/Caja_png.png" alt="Caja misteriosa" width="220" style="display: block; margin: 0 auto 1.5rem;"/>
+    <button id="btn-1">Abrir caja</button>
+  </div>
+
+  <!-- Paso 2: Examen -->
+  <div id="step-2" class="step hidden">
+    <p>Parece ser un examen.</p>
+    <img src="https://imgs.search.brave.com/dS2fdc-AoZcFnVguqtAcx8eRf6S07bpIJ5i-KAuahAY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG5p/Lmljb25zY291dC5j/b20vaWxsdXN0cmF0/aW9uL3ByZW1pdW0v/dGh1bWIvY29ycmVj/Y2lvbi1ncmFtYXRp/Y2FsLWRlLXZlcmlm/aWNhY2lvbi1mZW1l/bmluYS01MTcwMDYy/LTQzMjgwOTQucG5n" alt="Examen" width="220" style="display: block; margin: 0 auto 1.5rem;"/>
+    <button id="btn-2">Abrir examen</button>
+  </div>
+
+  <!-- Paso 3: Mensaje + GIF -->
+  <div id="step-3" class="step hidden">
+    <p>Cuidado: este examen fue abducido por un alienígena aburrido de tanta perfección.</p>
+    <img src="https://media.tenor.com/DbkOnZvFb6MAAAAM/glorp-outer-space.gif" alt="Alienígena divertido"/>
+    <button id="btn-3">¿Y esto que es?</button>
+  </div>
+
+  <!-- Paso 4: Regalo de los aliens -->
+  <div id="step-4" class="step hidden">
+    <p>Parece que el alienígena te han dejado algo a cambio…</p>
+    <button id="btn-4">Nota alien</button>
+  </div>
+
+  <!-- Paso 5: Nota final -->
+<div id="step-5" class="step hidden">
+  <div class="nota">
+    <img id="nota-img" src="assets/Nota_alien.png" alt="Regalo marciano" class="hidden"/>
+    <p></p>
+    <a id="nota-img"
+       href="assets/Nota_alien.png"
+       download="nota-marciana.png"
+       class="boton-descarga">
+       Ver nota
+    </a>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

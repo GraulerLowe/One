@@ -1,7 +1,7 @@
-const totalSteps = 5;
+const totalSteps = 6;
 const mensajes = [
-  "El alien te han regalado resiliencia épica.",
-  "¡Felicidades! Has desbloqueado el nivel de paz interior."
+  "El alien te ha regalado resiliencia épica.",
+  "El alien ha dejado algo únicamente para ti."
 ];
 
 function showStep(n) {
@@ -44,8 +44,6 @@ document.getElementById('btn-4').addEventListener('click', () => {
 
   const notaDiv = document.querySelector('#step-5 .nota');
   notaDiv.classList.add('visible');
-  
-  const downloadBtn = document.getElementById('descargar-nota');
-  downloadBtn.classList.remove('hidden');
+
 });
 
